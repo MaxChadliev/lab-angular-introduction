@@ -1,3 +1,13 @@
 <h1>
   {{title}}
 </h1>
+
+
+<ul>
+  <li *ngFor="let onePic of arrayOfPics">
+    
+     <h1 *ngIf="onePic.image"> <img src = "{{onePic.image}}"></h1>
+     <h2 *ngIf="onePic.description">Name: <i>{{onePic.description}}</i></h2>
+  </li>
+
+</ul>
