@@ -1,4 +1,25 @@
 <h1>{{year}}</h1>
 <h2>{{name}}</h2>
 <h2>{{image}}</h2>
-<h3>{{players}}</h3>
+<!-- <h3>{{players}}</h3> -->
+
+<div style="text-align:center">
+  <h1>
+    Welcome to the NBA, young blood!
+  </h1>
+  <div *ngFor="let champ of arrayOfChampions" class ="champ-card">
+
+    <h2>{{champ.year}}</h2>
+
+    <img src = "{{champ.image}}">
+    <h3>{{champ.name}}</h3>
+  
+
+    <h3>{{champ.players}}</h3>
+
+    
+    
+   
+  </div>
+ 
+</div>
